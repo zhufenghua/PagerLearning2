@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/welcome"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.swsc.pagerlearning2.WelcomeActivity">
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/viewpager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"> </android.support.v4.view.ViewPager>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="50dp">
+
+            <LinearLayout
+                android:id="@+id/ll"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"/>
+
+                <!--加一个红点,要注意，红点是在相对布局，如果放到线性布局中，就不会重在上面，显示会不对-->
+                <View
+                    android:id="@+id/red_point"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:background="@drawable/welcome_point_red" />
+
+        </RelativeLayout>
+
+
+
+</RelativeLayout>
